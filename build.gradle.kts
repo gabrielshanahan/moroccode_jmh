@@ -16,9 +16,9 @@ plugins {
 
 repositories {
 
-    maven {
-        url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
-    }
+//    maven {
+//        url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
+//    }
     mavenCentral()
     jcenter()
 }
@@ -34,7 +34,7 @@ dependencies {
     // This is needed due to a known issue with KotlinTest: https://github.com/kotlintest/kotlintest/issues/639
     testImplementation("org.slf4j", "slf4j-simple", "1.7.26")
 
-    implementation("io.github.gabrielshanahan", "moroccode", "1.0.0-SNAPSHOT")
+    implementation("io.github.gabrielshanahan", "moroccode", "1.0.0")
     implementation("com.github.pvdberg1998", "hashkode", "1.2.3")
     implementation("net.arhipov:equals-builder:0.3")
     implementation("au.com.console:kassava:2.0.0")
