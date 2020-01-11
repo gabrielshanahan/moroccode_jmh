@@ -62,9 +62,3 @@ tasks {
 jmh {
     duplicateClassesStrategy = DuplicatesStrategy.WARN
 }
-
-
-// Make all SNAPSHOTs refresh every build
-configurations.all {
-    resolutionStrategy.cacheChangingModulesFor(0, "seconds")
-}
